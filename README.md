@@ -104,6 +104,9 @@ docker compose exec python python src/populate.py seed --seed 42
 
 # 4. Abrir o JupyterLab e executar notebooks/00_teste_servicos.ipynb
 #    http://127.0.0.1:<JUPYTER_PORT>/lab?token=<JUPYTER_TOKEN>   (valores definidos no .env)
+
+# 5. Iniciar o container rapidamente (após já construído)
+docker compose up -d --wait
 ```
 
 Para encerrar mantendo os dados: `docker compose down`. Para apagar todos os dados do laboratório: `docker compose down -v`.
